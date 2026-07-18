@@ -5,74 +5,83 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
   // Projects Data
-  const projects = [
-    {
-      id: 1,
-      title: "Hospital Management System",
-      description: "Comprehensive hospital management platform with patient records, appointment scheduling, doctor management, and real-time analytics dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Tailwind", "Chart.js"],
-      image: "🏥",
-      category: "fullstack",
-      live: "https://hospital-demo.com",
-      github: "https://github.com/hospital-management",
-      featured: true
-    },
-    {
-      id: 2,
-      title: "Cosmetics E-Commerce Website",
-      description: "Modern cosmetics e-commerce platform with product catalog, shopping cart, payment integration, and responsive design.",
-      technologies: ["Next.js", "Tailwind CSS", "Stripe", "Framer Motion"],
-      image: "💄",
-      category: "frontend",
-      live: "https://cosmetics-demo.com",
-      github: "https://github.com/cosmetics-ecommerce",
-      featured: true
-    },
-    {
-      id: 3,
-      title: "Task Management Dashboard",
-      description: "Collaborative task management app with drag & drop, real-time updates, user roles, and analytics.",
-      technologies: ["React", "Firebase", "TypeScript", "Tailwind"],
-      image: "📋",
-      category: "fullstack",
-      live: "https://task-demo.com",
-      github: "https://github.com/task-manager",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Portfolio Website",
-      description: "Personal portfolio with smooth animations, glassmorphism design, and modern gradients using React & Tailwind.",
-      technologies: ["React", "Tailwind", "Framer Motion"],
-      image: "🌐",
-      category: "frontend",
-      live: "https://portfolio-demo.com",
-      github: "https://github.com/portfolio",
-      featured: true
-    },
-    {
-      id: 5,
-      title: "Weather Dashboard",
-      description: "Real-time weather app with location-based forecasts, interactive maps, and beautiful UI animations.",
-      technologies: ["React", "OpenWeather API", "Leaflet Maps"],
-      image: "🌤️",
-      category: "frontend",
-      live: "https://weather-demo.com",
-      github: "https://github.com/weather-app",
-      featured: false
-    },
-    {
-      id: 6,
-      title: "Blog Platform",
-      description: "Full-featured blogging platform with rich text editor, categories, search, and admin dashboard.",
-      technologies: ["Next.js", "Prisma", "PostgreSQL"],
-      image: "📝",
-      category: "fullstack",
-      live: "https://blog-demo.com",
-      github: "https://github.com/blog-platform",
-      featured: false
-    }
-  ];
+const projects = [
+  {
+    id: 1,
+    title: "Hotel Booking System",
+    description:
+      "A modern and responsive hotel booking web application where users can explore hotels, search destinations, view hotel details, and enjoy an elegant booking interface with a beautiful user experience.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "React Router",
+      "Framer Motion"
+    ],
+    image: "🏨",
+    category: "frontend",
+    live: "https://hotel-system-8qil-omega.vercel.app/",
+    github: "https://github.com/malik-lgtm/hotel-system",
+    featured: true,
+  },
+
+  {
+    id: 2,
+    title: "E-Commerce Website",
+    description:
+      "A fully responsive e-commerce website featuring product listings, shopping cart, authentication, product details, Context API state management, and a clean modern interface.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Context API",
+      "JavaScript",
+      "React Router"
+    ],
+    image: "🛒",
+    category: "frontend",
+    live: "https://e-commerce-z79g.vercel.app/",
+    github: "https://github.com/malik-lgtm/e-commerce",
+    featured: true,
+  },
+
+  {
+    id: 3,
+    title: "Cosmetics E-Commerce Website",
+    description:
+      "An online cosmetics shopping website developed with PHP and MySQL featuring product management, shopping cart, user authentication, contact form, and responsive design.",
+    technologies: [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    image: "💄",
+    category: "fullstack",
+    live: "#",
+    github: "https://github.com/malik-lgtm/cosmetics-project",
+    featured: true,
+  },
+
+  {
+    id: 4,
+    title: "Personal Portfolio",
+    description:
+      "My personal portfolio website showcasing my skills, projects, education, and experience with smooth animations, responsive layouts, and modern UI built using React and Tailwind CSS.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "JavaScript"
+    ],
+    image: "💼",
+    category: "frontend",
+    live: "https://my-portfolio-3nwt.vercel.app/",
+    github: "https://github.com/malik-lgtm",
+    featured: true,
+  },
+];
 
   // Filter projects
   const filteredProjects = activeFilter === 'all' 

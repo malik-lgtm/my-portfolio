@@ -18,12 +18,7 @@ const Contact = () => {
       value: 'tasmiazameer407@gmail.com',
       link: 'mailto:tasmiazameer407@gmail.com'
     },
-    {
-      icon: '📱',
-      title: 'Phone',
-      value: '+92 3281189078',
-      link: 'tel:+923281189078'
-    },
+   
     {
       icon: '📍',
       title: 'Location',
